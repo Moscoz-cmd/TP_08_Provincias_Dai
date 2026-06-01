@@ -28,6 +28,5 @@ ON CONFLICT (id) DO UPDATE SET
   latitude = EXCLUDED.latitude,
   longitude = EXCLUDED.longitude,
   display_order = EXCLUDED.display_order;
-
 COMMIT;
 --creada en supabase
