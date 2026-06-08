@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { StatusCodes } from 'http-status-codes';
 import ProvinciaService from '../services/provincia-service.js';
 
+
 const ProvinciaRouter = Router();
 const service = new ProvinciaService();
 
