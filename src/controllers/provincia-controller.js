@@ -10,7 +10,8 @@ ProvinciaRouter.get('/', async (req, res) => {
     try {
         const provincias = await service.getAllAsync();
         res.status(StatusCodes.OK).json(provincias);
-    } catch {
+    } catch (error) {
+        console.error(error);
         res.status(StatusCodes.INTERNAL_SERVER_ERROR).send('Error interno del servidor.');
     }
 });

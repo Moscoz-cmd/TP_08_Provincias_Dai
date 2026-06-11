@@ -33,5 +33,5 @@ const validateProvince = (province) => {
     return errors; 
 }
  
-export { validateProvince };
+export { validateProvince as validateProvincia };
  
