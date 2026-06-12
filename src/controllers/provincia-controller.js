@@ -35,7 +35,8 @@ ProvinciaRouter.post('/', async (req, res) => {
             return res.status(StatusCodes.BAD_REQUEST).send(result.error);
         }
         res.status(StatusCodes.CREATED).json(result.data);
-    } catch {
+    } catch (error) {
+        console.error(error); 
         res.status(StatusCodes.INTERNAL_SERVER_ERROR).send('Error interno del servidor.');
     }
 });
